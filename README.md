@@ -19,3 +19,14 @@ It supports DB-level filtering and Meilisearch (optional).
 - Laravel developers who want reusable, structured filtering
 - Projects with large datasets and multiple filter conditions
 - Developers who want to separate **filter logic** from controllers
+
+## Installation
+
+Install using composer
+
+```bash
+composer require filterik/filterik
+```
+
+
+
