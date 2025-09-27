@@ -28,5 +28,30 @@ Install using composer
 composer require filterik/filterik
 ```
 
+## Usage
 
+```php
+#use trait inside model
+use Filterik\Traits\HasFilterik;
 
+class Product extends Model
+{
+    use HasFilterik;
+}
+
+#code example 
+
+Route::get('products', function (Request $request) {
+    $filters = [
+        'status'      => new StatusFilter(),
+        'price'       => new PriceFilter(),
+        'created_at'  => new DateRangeFilter('created_at'),
+        'is_featured' => new BooleanFilter('is_featured'),
+        'category_id' => new BooleanFilter('category_id'),
+    ];
+
+    $products = Product::filterik($filters)->get();
+    return response()->json($products);
+});
+
+```
