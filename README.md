@@ -56,14 +56,14 @@ Route::get('products', function (Request $request) {
 
 ```
 
-##Available filter 
+## Available filter 
 -- Boolean Filter
 BooleanFilter is designed to filter Eloquent query results based on true/false values in a specific column. It is very handy for flags like is_featured, is_active, published, etc.
 
 
--- DateRangeFilter
--- MultiselectFilter
--- PriceFilter
--- SearchFilter
--- StatusFilter
+- DateRangeFilter
+- MultiselectFilter
+- PriceFilter
+- SearchFilter
+- StatusFilter
 
