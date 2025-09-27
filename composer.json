@@ -1,0 +1,50 @@
+{
+  "name": "filterik/filterik",
+  "description": "Filterik — A dynamic, customizable filtering & search package for Laravel (supports DB + Meilisearch).",
+  "keywords": [
+    "laravel",
+    "filter",
+    "search",
+    "meilisearch",
+    "scout",
+    "dynamic-filter",
+    "customizable"
+  ],
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Rakibul Islam",
+      "email": "rirrakib10@gmail.com",
+      "homepage": "https://github.com/rirakib/Filterik",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=8.1",
+    "illuminate/support": "^10 || ^11 || ^12",
+    "laravel/scout": "^10 || ^11 || ^12"
+  },
+  "autoload": {
+    "psr-4": {
+      "Filterik\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Filterik\\Providers\\FilterikServiceProvider"
+      ],
+      "aliases": {
+        "Filterik": "Filterik\\Facades\\Filterik"
+      }
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "support": {
+    "issues": "https://github.com/rirakib/Filterik/issues",
+    "source": "https://github.com/rirakib/filterik",
+    "docs": "https://github.com/rirakib/filterik#readme"
+  }
+}
